@@ -1,31 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Michael Li</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style.css" rel="stylesheet">
-    </head>
+<html>
 
-    <body>
-        <header>
-            <div class="main">
-                <ul>
-                    <li class="active"><a href="#">HOME</a></li>
-                    <li><a href="#">RESUME</a></li>
-                    <li><a href="#">PROJECTS</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                </ul>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="index-style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <button id="sidebar-header-btn" type="button" class="btn btn-primary-outline">Michael Li</button>
             </div>
-            <div class="title">
-                <h1>Michael Li</h1>
-            </div>
-            <div class="container">
-                <img src="img/outlook.jpg" alt="github">
-                <button class="btn">Button</button>
-            </div>
-        </header>
-    </body>
+
+            <ul class="list-unstyled components">
+                <p>Table of Contents</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="home.html#Introduction">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="home.html#My-Website">My Website</a>
+                        </li>
+                        <li>
+                            <a href="home.html#Future-Plans">Future Plans</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="aboutme.html">About Me</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Projects</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#home-header1">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#home-header2">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#asdf">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Contents</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h2>About Me</h2>
+            <p>Hi! My name is Michael Li and welcome to my personal website. I am a second year student at the University of Waterloo, currently studying Mathematics, 
+                with an interest in Computational Mathematics and Statistics. My hobbies include video-games, anime, music (hip-hop/rnb). I played football all 4 years 
+                of highschool, so I also enjoy watching the NFL when I get the chance. Of course, coding is just another hobby of mine, one that I wish to evolve it 
+                into a career and I'm excited for what the future holds!
+            </p>
+
+            <div class="line"></div>
+
+            <h2 id="home-header1">My Website</h2>
+            <p>
+                Welcome to my personal playground! This is where I will stage my projects and bundle together any information about myself or ways to contact me.
+            </p>
+                
+            <div class="line"></div>
+
+            <h2 id="home-header1">Projects</h2>
+                
+            <h3>
+                <a href="#">
+                    Website
+                </a></h3>
+            <p>
+                This multi-page website was built with HTML5 and Bootstrap 4, as well as JS scripts in order to implement elements such as the side bar. For more
+                information, click <a class='project-link' href="#">here</a>.
+            </p>
+
+            <h3>
+                <a href="#">
+                    FoodTracker
+                </a>
+            </h3>
+            <p>
+                A calorie counter app built with Javascript and React. For more information, click <a class='project-link' href="#">here</a>.
+            </p>
+
+            <div class="line"></div>
+
+            <h2 id="home-header2">Future Improvements</h2>
+            <ul>
+                <li class='improvements'>Blog Page</li>
+                <li class='improvements'>Add support for and implement projects onto webpage</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('active');
+            });
+        });
+    </script>
+</body>
 
 </html>
-
