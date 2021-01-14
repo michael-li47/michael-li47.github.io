@@ -151,7 +151,8 @@ ul.CTAs a {
 
 #back {
     background-image: url('images/construction.gif');
-    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /* ---------------------------------------------------
