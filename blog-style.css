@@ -147,6 +147,12 @@ ul.CTAs a {
     margin-left: 0px;
 }
 
+#uc {
+    display:inline-block;
+    text-align: center;
+    width: 100%;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
