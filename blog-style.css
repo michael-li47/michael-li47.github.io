@@ -146,6 +146,7 @@ ul.CTAs a {
 #content.active {
     margin-left: 0px;
 }
+<<<<<<< HEAD
 
 #uc {
     display:inline-block;
@@ -153,6 +154,8 @@ ul.CTAs a {
     width: 100%;
 }
 
+=======
+>>>>>>> b0681178aa6297ca6eeb01493c3fcbe873b524ae
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
