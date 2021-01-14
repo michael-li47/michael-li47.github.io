@@ -141,10 +141,19 @@ ul.CTAs a {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #content.active {
     margin-left: 0px;
+}
+
+#center-column {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #uc {
