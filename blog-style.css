@@ -149,6 +149,13 @@ ul.CTAs a {
     margin-left: 0px;
 }
 
+#back {
+    background-image: url('images/construction.gif');
+    background-size: cover;
+    height: 100%;
+    padding: 0%;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
