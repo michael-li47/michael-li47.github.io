@@ -150,11 +150,6 @@ ul.CTAs a {
     margin-left: 0px;
 }
 
-#center-column {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 #uc {
     text-align: center;
