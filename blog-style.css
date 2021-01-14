@@ -140,9 +140,6 @@ ul.CTAs a {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
-    background-image: url('images/construction.gif');
-    background-size: cover;
-    height: 100%;
 }
 
 #content.active {
