@@ -130,6 +130,13 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
+.btn-primary-outline {
+    background-color: transparent;
+    border-color: #3a3a3a;
+    color: white;
+    font-size: 30px;
+}
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
