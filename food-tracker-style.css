@@ -6,10 +6,18 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: rgb(75, 75, 75);
+}
+
+.improvements {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: rgb(75, 75, 75);
 }
 
 a,
@@ -60,7 +68,6 @@ a:focus {
     color: #fff;
     transition: all 0.3s;
     overflow-x: hidden;
-    
     position:fixed;
 }
 
@@ -71,6 +78,13 @@ a:focus {
 #sidebar .sidebar-header {
     padding: 20px;
     background: #3a3a3a;
+}
+
+.btn-primary-outline {
+    background-color: transparent;
+    border-color: #3a3a3a;
+    color: white;
+    font-size: 30px;
 }
 
 #sidebar ul.components {
@@ -145,6 +159,26 @@ ul.CTAs a {
 #content.active {
     margin-left: 0px;
 }
+
+/* unvisited link */
+.project-link:link {
+    color: blue;
+  }
+  
+  /* visited link */
+  .project-link:visited {
+    color: rgb(84, 171, 201);
+  }
+  
+  /* mouse over link */
+  .project-link:hover {
+    color: blue;
+  }
+  
+  /* selected link */
+  .project-link:active {
+    color: blue;
+  }
 
 /* ---------------------------------------------------
     MEDIAQUERIES
