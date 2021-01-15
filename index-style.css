@@ -144,19 +144,6 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
-.btn {
-    background-color: DodgerBlue;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  
-  .btn:hover {
-    background-color: RoyalBlue;
-  }
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
